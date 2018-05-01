@@ -9,7 +9,15 @@
     <body>
         <?php
         for ($x = 1; $x <= 11; $x++) {
-            echo "<div id:\"div$x\">This is div $x</div>";
+            if ($x % 2 == 0)
+            {
+                echo "<div style=\"color:#AFA;\" id:\"div$x\">This is div $x</div>";
+            }
+            else 
+            {
+                echo "<div id:\"div$x\">This is div $x</div>";
+            }
+            
         } 
         ?>
     </body>
