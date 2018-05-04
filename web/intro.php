@@ -13,7 +13,7 @@
         <h2>Emma Fisher</h2>
         <p>Welcome to my webpage! I'm Emma, a Computer Science 
         student currently attending BYU-Idaho.</p>
-        </div>
+        
         <?php
             $date = strtotime("September 21, 2018 6:00 AM");
             $remaining = $date - time();
@@ -23,6 +23,6 @@
             $seconds_remaining = ($remaining % 60);
             echo "Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds";
         ?>
-        
+        </div>
     </body>
 </html>
