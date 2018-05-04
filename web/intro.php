@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+        <title>Homepage</title>
     </head>
     <body>
-        <h1>Introduction Page </h1>
-        <h2>Thank you for visiting my webpage. </h2>
-        <h3>Here you will learn a little more about ice cream </h3>
+        <h1>CS 313 Homepage </h1>
+        <h3>Emma Fisher</h3>
+        <p>Welcome to my webpage! I'm Emma, a Computer Science 
+        student currently attending BYU-Idaho.</p>
         <?php
-      
+            $date = strtotime("September 21, 2018 6:00 AM");
+            $remaining = $date - time();
+            $days_remaining = floor($remaining / 86400);
+            $hours_remaining = floor(($remaining % 86400) / 3600);
+            $minutes_remaining = floor(($remaining % 3600) / 60);
+            $seconds_remaining = (remaining % 60);
+            echo "Time until my next birthday: $days_remaining days $hours_remaining hours";
         ?>
     </body>
 </html>
