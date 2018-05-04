@@ -9,3 +9,7 @@ h2 {
 h3 {
     color: purple;
 }
+
+body {
+    background-image: url(backgroundImage.jpg);
+}

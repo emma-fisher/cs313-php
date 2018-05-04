@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="main.css">
         <title>Homepage</title>
     </head>
-    <body background="backgroundImage">
+    <body>
         <h1>CS 313 Homepage </h1>
         <h2>Emma Fisher</h2>
         <p>Welcome to my webpage! I'm Emma, a Computer Science 
