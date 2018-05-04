@@ -11,5 +11,5 @@ h3 {
 }
 
 body {
-    background-image: url(backgroundImage.jpg);
+    background: url("backgroundImage.jpg");
 }
