@@ -12,8 +12,8 @@
         <h1>CS 313 Homepage </h1>
         <div>
         <h2>Emma Fisher</h2>
-        <p>Welcome to my webpage! I'm Emma, a Computer Science 
-        student currently attending BYU-Idaho.</p>
+        <h3>Welcome to my webpage! I'm Emma, a Computer Science 
+        student currently attending BYU-Idaho.</h3>
         
         <?php
             $date = strtotime("September 21, 2018 6:00 AM");
