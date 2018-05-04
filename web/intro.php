@@ -8,8 +8,9 @@
         <title>Homepage</title>
     </head>
     <body>
-    <div>
+    
         <h1>CS 313 Homepage </h1>
+        <div>
         <h2>Emma Fisher</h2>
         <p>Welcome to my webpage! I'm Emma, a Computer Science 
         student currently attending BYU-Idaho.</p>
@@ -24,5 +25,6 @@
             echo "Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds";
         ?>
         </div>
+        <button onclick="location.href='assignments.php'" type="button">Click Here</button>
     </body>
 </html>
