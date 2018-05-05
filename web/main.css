@@ -23,3 +23,13 @@ div {
     background-color: gray;
     opacity: 0.75;
 }
+
+img {
+    height: 50%;
+    width: 50%;
+    z-index: 1;
+}
+
+button {
+    float: left;
+}
