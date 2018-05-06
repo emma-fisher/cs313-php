@@ -24,13 +24,13 @@ div {
     opacity: 0.75;
 }
 
-img {
+.img {
     height: 25%;
     width: 25%;
     z-index: 1;
 }
 
-button {
+.button {
     float: left;
     height: 20 px;
     width: 30 px;

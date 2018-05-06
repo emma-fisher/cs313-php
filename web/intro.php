@@ -26,7 +26,7 @@
         ?>
         </div>
         </div>
-        <button onclick="location.href='assignments.php'" type="button">Click Here</button>
+        <button class="button" onclick="location.href='assignments.php'" type="button">Click Here</button>
         <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/19225525_1386650188069841_3093724628678236927_n.jpg?_nc_cat=0&oh=99d91432eca6b5f6988a58a7e5458ef7&oe=5B4F9288")>
        
     </body>
