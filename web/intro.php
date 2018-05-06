@@ -14,9 +14,10 @@
         <h2>Emma Fisher</h2>
         <h3>Welcome to my webpage! I'm Emma, a Computer Science 
         student currently attending BYU-Idaho.</h3>
-        <div>
-        <img id="bearPic" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/19225525_1386650188069841_3093724628678236927_n.jpg?_nc_cat=0&oh=99d91432eca6b5f6988a58a7e5458ef7&oe=5B4F9288")>
+        
         </div>
+        <img id="bearPic" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/19225525_1386650188069841_3093724628678236927_n.jpg?_nc_cat=0&oh=99d91432eca6b5f6988a58a7e5458ef7&oe=5B4F9288")>
+
         <div class="daysToBday">
         <?php
             $date = strtotime("September 21, 2018 6:00 AM");
@@ -28,6 +29,7 @@
             echo "Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds";
         ?>
         </div>
+        <div>
         <a href="assignments.php">Click Here to see my Assignments Page!</a>
         </div>
     </body>
