@@ -19,3 +19,9 @@ div {
     background-color: gray;
     opacity: 0.75;
 }
+
+bearPic {
+    height: 50%;
+    width: 50%;
+    float: left;
+}
