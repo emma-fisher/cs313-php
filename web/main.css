@@ -25,11 +25,22 @@ div {
 }
 
 img {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
     z-index: 1;
 }
 
 button {
     float: left;
+    height: 20 px;
+    width: 30 px;
+    color: gray;
+    opacity: 0.85;
+}
+
+.daysToBday {
+    background-color: gray;
+    opacity: 0.75;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
 }
