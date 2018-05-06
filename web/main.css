@@ -3,7 +3,7 @@
     height: 20 px;
     width: 30 px;
     color: gray;
-    background-color: #4CAF50;
+    background-color: #4CAF50 !important;
     border: none;
     padding: 15px 32px;
     text-align: center;
