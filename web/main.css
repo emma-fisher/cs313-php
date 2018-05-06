@@ -12,12 +12,14 @@ h3 {
 
 body {
     background: url("https://images.pexels.com/photos/733475/pexels-photo-733475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    opacity: 0.75;
+    opacity: 0.85;
+    padding: 30px;
 }
 
 div {
     background-color: gray;
     opacity: 0.75;
+    padding: 5px;
 }
 
 #bearPic {
@@ -25,10 +27,16 @@ div {
     width: 25%;
     float: left;
     opacity: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #box1,
 #box2 {
-    max-width: 300px;
-    float: right;
+    width: 600px;
+    height: 50px;
+    margin-left: 550px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+    padding: 20px;
 }
