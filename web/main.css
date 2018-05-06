@@ -26,3 +26,9 @@ div {
     float: left;
     opacity: 100%;
 }
+
+#box1,
+#box2 {
+    max-width: 300px;
+    float: right;
+}
