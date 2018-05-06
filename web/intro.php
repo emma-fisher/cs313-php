@@ -26,8 +26,7 @@
             $hours_remaining = floor(($remaining % 86400) / 3600);
             $minutes_remaining = floor(($remaining % 3600) / 60);
             $seconds_remaining = ($remaining % 60);
-            echo "Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds";
-        ?>
+            echo "<div>Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds;</div>"        ?>
         </div>
         <div>
         <a href="assignments.php">Click Here to see my Assignments Page!</a>
