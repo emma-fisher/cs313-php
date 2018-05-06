@@ -1,8 +1,16 @@
-a {
-    float: left;
-    font-family: 'Courier New', Courier, monospace;
-    color: gray;
-    cursor: pointer;
+a:link,
+a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: red;
 }
 
 h1 {
@@ -11,11 +19,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
-    color: beige;
-    font-family: 'Courier New', Courier, monospace;
-}
-
+h2,
 h3 {
     color: beige;
     font-family: 'Courier New', Courier, monospace;
@@ -30,17 +34,4 @@ div,
 a {
     background-color: gray;
     opacity: 0.75;
-}
-
-.img {
-    height: 25%;
-    width: 25%;
-    z-index: 1;
-}
-
-.daysToBday {
-    background-color: gray;
-    opacity: 0.75;
-    color: beige;
-    font-family: 'Courier New', Courier, monospace;
 }
