@@ -33,6 +33,9 @@
             $seconds_remaining = ($remaining % 60);
             echo "<div style ='font:COurier New,sans-serif'>Time until my next birthday: $days_remaining days $hours_remaining hours $minutes_remaining minutes $seconds_remaining seconds</div>"        ?>
         </div>
+        <div id="box3">
+            <a href="http://flappybird.io/">Click here to play a fun game.</a>
+        </div>
         
     </body>
 </html>
