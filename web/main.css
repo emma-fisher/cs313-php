@@ -21,7 +21,8 @@ div {
 }
 
 #bearPic {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
     float: left;
+    opacity: 100%;
 }
