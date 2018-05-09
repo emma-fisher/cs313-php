@@ -10,9 +10,9 @@
     <body>
         <div id="header">Welcome to The Ice Cream Shop!</div>
         <div id="container">
-            <div> Mint Chip</div>
+            <div><img src="chocolate.jpeg" alt="Chocolate Ice Cream" height="42" width="42">Chocolate</div>
             <div>Vanilla</div>
-            <div>Chocolate</div>
+            <div>Mint Chip</div>
             <div>Banana</div>
             <div>Bubblegum</div>
             <div>Oreo</div>
@@ -20,7 +20,7 @@
             <div>Cherry Chip</div>
             <div>Neopolitan</div>
             <div>Mint Chip</div>
-            <div></div>
+            <div>Strawberry</div>
             <div>Rainbow Sherbet</div>
         </div>
     </body>
