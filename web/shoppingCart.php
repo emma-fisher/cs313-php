@@ -57,7 +57,14 @@
             <table class="image">
             <tr><td><img src="rainbowSherbet.jpg" alt="Rainbow Sherbet"></td></tr>
             <tr><td class="caption">Rainbow Sherbet</td></tr>
+            <button name="flavor" value="Rainbow Sherbet">Rainbow Sherbet</button>
             </table>
         </div>
+
+        <?php
+            $flavor = htmlspecialchars($_POST["value"]);
+
+            echo "Your flavor is " . $flavor;
+        ?>
     </body>
 </html>

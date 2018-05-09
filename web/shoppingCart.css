@@ -4,9 +4,11 @@
 
 #container {
     column-count: 3;
+    margin-left: 75px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 img {
     height: 200px;
-    width: 200px;
+    width: 300px;
 }
