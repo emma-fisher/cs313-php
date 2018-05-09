@@ -1,14 +1,23 @@
 #header {
-    background-color: rgb(62, 119, 173);
+    background-color: rgb(151, 198, 208);
+    font-size: 2em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #f6ecd9;
 }
 
 #container {
     column-count: 3;
     margin-left: 75px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-top: 30px;
 }
 
 img {
     height: 200px;
     width: 300px;
+    margin-top: 60px;
 }
