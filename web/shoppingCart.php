@@ -10,6 +10,10 @@
     <body>
         <div id="header">Welcome to The Ice Cream Shop!</div>
         <div id="container">
+            <table class="image">
+            <tr><td><img src="chocolate.jpg" alt="Chocolate Ice Cream"></td></tr>
+            <tr><td class="caption">Chocolate</td></tr>
+            </table>
             <div><img src="chocolate.jpg" alt="Chocolate Ice Cream" height="42" width="42">Chocolate</div>
             <div>Vanilla</div>
             <div>Mint Chip</div>
