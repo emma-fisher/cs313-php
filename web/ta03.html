@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="ta03.php" method="post" id="userForm">
+        Name:
+        <input type="text" name="name">
+        <br> Email:
+        <input type="text" name="email">
+        <br> Major:
+        <br>
+        <input type="radio" name="major" value="Computer Science" checked> Computer Science
+        <br>
+        <input type="radio" name="major" value="Web Design and Development"> Web Design and Development
+        <br>
+        <input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology
+        <br>
+        <input type="radio" name="major" value="Computer Engineering"> Computer Engineering
+        <br>
+        <input type="submit" value="Submit">
+        <br> Continents you've been in:
+        <br>
+        <input type="checkbox" name="continent[]" value="North America">North America
+        <br>
+        <input type="checkbox" name="continent[]" value="South America">South America
+        <br>
+        <input type="checkbox" name="continent[]" value="Antarctica">Antarctica
+        <br>
+        <input type="checkbox" name="continent[]" value="Europe">Europe
+        <br>
+        <input type="checkbox" name="continent[]" value="Asia">Asia
+        <br>
+        <input type="checkbox" name="continent[]" value="Australia">Australia
+        <br>
+        <input type="checkbox" name="continent[]" value="Africa">Africa
+        <br>
+    </form>
+    <br> Comment:
+    <textarea name="comment" form="userForm">Put your comments here.</textarea>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "ta03.php".</p>
+
+</body>
+
+</html>

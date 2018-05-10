@@ -1,11 +1,3 @@
-
-
- <?php
-    $flavor = htmlspecialchars($_POST["name"]);
-
-    echo $flavor;
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +7,8 @@
 <body>
 	<h1>Submission Results</h1>
 
-	<p>Your name is: <?$flavor ?></p>
+	Your name is: <?php echo $_POST["name"]; ?>
+	The flavor you added is: <?php echo $_POST["Rainbow"];?>
 
 </body>
 
