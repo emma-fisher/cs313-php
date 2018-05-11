@@ -6,7 +6,11 @@
 
 <body>
 	<h1>Submission Results</h1>
-	The flavor you added is: <?php echo $_POST["flavor"];?>
+	The flavor you added is: <?php 
+	foreach($_POST[flavors] as $flavor) {
+            echo $flavor . ", ";
+		}
+		?>
 
 </body>
 
