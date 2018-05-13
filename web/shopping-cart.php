@@ -56,7 +56,7 @@
 	?>
 
 	<a href="shopping-cart.html">Keep shopping</a>
-	<a href="checkout.php">Check out</a>
+	<a href="checkout.html">Check out</a>
 
 </body>
 
