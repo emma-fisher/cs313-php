@@ -22,7 +22,7 @@
 		echo '<tr>';
 		for($j=1;$j<=$Cols;$j++)
 		{ 
-			echo '<td>' . $items[i] . 1 . '</td>'; 
+			echo '<td>' . $items[$i] . 1 . '</td>'; 
 		}
 		echo '</tr>';
 	}
