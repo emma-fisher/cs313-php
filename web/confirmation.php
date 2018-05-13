@@ -9,6 +9,7 @@
     <?php 
     
         $firstname = htmlspecialchars($_POST["firstname"]);
+        echo 'First Name: ' . $firstname;
         $lastname = htmlspecialchars($_POST["lastname"]);
         $street = htmlspecialchars($_POST["street"]);
         $city = htmlspecialchars($_POST["city"]);
@@ -16,7 +17,7 @@
         $zip = htmlspecialchars($_POST["zip"]);
     ?>
 
-    <p>First Name: <?=$firstname ?></p>
+   
     <p>Last Name: <?=$lastname ?></p>
 	<p>Street: <?=$street ?></p>
 	<p>City: <?=$city ?></p>
