@@ -14,13 +14,18 @@
 			array_push($items, $flavor);
 		}
 
-	$Rows = 4; //Dynamic number for Rowss
-	$Cols = 3; // Dynamic number for Colsumns
+	$Rows = sizeof($items); //Dynamic number for Rowss
+	$Cols = 2; // Dynamic number for Columns
 	echo '<table border="1">';
-	for($i=1;$i<=$Rows;$i++){ echo '<tr>';
-	  for($j=1;$j<=$Cols;$j++){ echo '<td>' . mt_rand($i, $i*100) . mt_rand($j, $j*100) . '</td>'; }
-		  echo '</tr>';
-	  }
+	for($i=1;$i<=$Rows;$i++)
+	{ 
+		echo '<tr>';
+		for($j=1;$j<=$Cols;$j++)
+		{ 
+			echo '<td>' . $items[i] . 1 . '</td>'; 
+		}
+		echo '</tr>';
+	}
 	echo '</table>';
 	?>
 
