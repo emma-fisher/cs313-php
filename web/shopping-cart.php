@@ -27,14 +27,12 @@
 	{ 
 		echo '<tr>';
 		echo '<td>' . $items[$i] . '</td>';
-		for($j=1;$j<$Cols;$j++)
+		for($j=2;$j<$Cols;$j++)
 		{ 
-			echo '<tr>';
 			 echo '<td>' . 1 . '</td>';
 			 echo '<td>' . '<a href="?delete=<?php echo($i); ?>">Delete from cart</a>' . '</td>';
 			 echo '</tr>';
 		}
-		echo '</tr>';
 	}
 	echo '</table>';
 
