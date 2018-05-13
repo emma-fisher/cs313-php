@@ -17,7 +17,11 @@
 	$Rows = sizeof($items); //Dynamic number for Rowss
 	$Cols = 2; // Dynamic number for Columns
 	echo '<table border="1">';
-	echo '<td>Item Name</td>';
+	echo '<tr>';
+	echo '<th>Item Name</th>';
+	echo '<th>Quantity</th>';
+	echo '</tr>';
+	
 	for($i=0;$i<$Rows;$i++)
 	{ 
 		echo '<tr>';
