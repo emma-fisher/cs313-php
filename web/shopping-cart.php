@@ -20,10 +20,10 @@
 	for($i=0;$i<$Rows;$i++)
 	{ 
 		echo '<tr>';
-		echo '<td>' . $items[$i] . 1 . '</td>';
-		for($j=0;$j<$Cols;$j++)
+		echo '<td>' . $items[$i] . '</td>';
+		for($j=1;$j<$Cols;$j++)
 		{ 
-			 echo '<td>' . 'hello' . '</td>';
+			 echo '<td>' . 1 . '</td>';
 		}
 		echo '</tr>';
 	}
