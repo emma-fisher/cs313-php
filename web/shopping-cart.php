@@ -17,12 +17,13 @@
 	$Rows = sizeof($items); //Dynamic number for Rowss
 	$Cols = 2; // Dynamic number for Columns
 	echo '<table border="1">';
-	for($i=1;$i<=$Rows;$i++)
+	for($i=0;$i<$Rows;$i++)
 	{ 
 		echo '<tr>';
-		for($j=1;$j<=$Cols;$j++)
+		echo '<td>' . $items[$i] . 1 . '</td>';
+		for($j=0;$j<$Cols;$j++)
 		{ 
-			echo '<td>' . $items[$i] . 1 . '</td>'; 
+			 echo 'hello';
 		}
 		echo '</tr>';
 	}
