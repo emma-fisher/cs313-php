@@ -56,13 +56,7 @@
 	?>
 
 	<a href="shopping-cart.html">Keep shopping</a>
-	<a href="">Check out</a>
-
-	<script>
-		function deleteItem() {
-
-		}
-	</script>
+	<a href="checkout.php">Check out</a>
 
 </body>
 
