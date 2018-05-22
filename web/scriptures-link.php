@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Scriptures </title>
+        <title> Scriptures Link </title>
     </head>
     <body>
         <?php
@@ -23,8 +23,7 @@
 
         foreach ($db->query('SELECT * FROM scriptures') as $row)
         {
-            echo '<a href="scriptures-link.php" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
-            echo '<br/>';
+            echo $row['content'];
         }
         ?>
     </body>
