@@ -23,7 +23,7 @@
 
         foreach ($db->query('SELECT * FROM scriptures') as $row)
         {
-            echo '<a href="scriptures-link.php" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
+            echo '<a href="scriptures-link.php?varname=<?php echo $row['content'] ?>" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
             echo '<br/>';
         }
         ?>
