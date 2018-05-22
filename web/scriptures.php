@@ -4,6 +4,10 @@
         <title> Scriptures </title>
     </head>
     <body>
+     <!--<form onsubmit="scriptures-link.php" method="POST">
+        <input type="text" name="book"/>
+        <input type="submit"/>
+     </form> -->
         <?php
         $dbUrl = getenv('DATABASE_URL');
 
@@ -23,8 +27,7 @@
 
         foreach ($db->query('SELECT * FROM scriptures') as $row)
         {
-            $content = $row['content'];
-            echo '<a href="scriptures-link.php?varname=<?php echo $content?>" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
+            echo '<a href="scriptures-link.php?id=' . $row['id'] . '" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
             echo '<br/>';
         }
         ?>

@@ -21,7 +21,15 @@
 
         echo "<h2>Scripture Content</h2>";
 
-        echo $row['content'];
+        foreach ($db->query('SELECT * FROM scriptures') as $row)
+        {
+            if ($row['id'] == $_GET["id"])
+            {
+                echo '<a href="scriptures-link.php" <strong>' . $row['book'] . ' ' . $row['chapter'] . ":" . $row['verse'] . '</strong></a>';
+                echo '<br/>';
+            }
+            
+        }
         ?>
     </body>
 </html>
