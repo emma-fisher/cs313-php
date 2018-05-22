@@ -25,7 +25,7 @@
         {
             if ($row['id'] == $_GET["id"])
             {
-                echo '<a href="scriptures-link.php" <strong>' . $row['content'] . '</strong></a>';
+                echo '<strong>' . $row['content'] . '</strong>';
                 echo '<br/>';
             }
             
