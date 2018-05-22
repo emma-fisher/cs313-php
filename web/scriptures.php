@@ -19,7 +19,7 @@
         
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        echo "<h2>Scripture Resources</h2>"
+        echo "<h2>Scripture Resources</h2>";
 
         foreach ($db->query('SELECT * FROM scriptures') as $row)
         {
