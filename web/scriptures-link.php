@@ -25,7 +25,7 @@
         {
             if ($row['id'] == $_GET["id"])
             {
-                echo '<strong>' . $row['content'] . '</strong>';
+                echo '<strong>' . $row['content'] . $row['book'] . '</strong>';
                 echo '<br/>';
             }
             
