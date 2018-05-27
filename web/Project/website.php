@@ -87,7 +87,7 @@
                 ?>
                 </h3>
                 <p><?php 
-                    foreach ($db->query('SELECT description_text FROM posts') as $post)
+                    foreach ($db->query('SELECT title, description_text FROM posts') as $post)
                     {
                         $description = $post["description_text"];
                         $title = $post["title"];
