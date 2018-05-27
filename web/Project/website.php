@@ -30,12 +30,11 @@
         </title>
     </head>
     <body>
-        <nav class="uk-navbar-container uk-margin" uk-navbar>
-            <div class="uk-navbar-center">
-                <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
-            </div>
-        </nav>
+        
     <?php
+
+        $first_name;
+        $last_name;
        
         foreach ($db->query('SELECT first_name, last_name FROM users') as $user)
         {
@@ -44,6 +43,14 @@
             
             echo "<p>$first_name $last_name</p><br>";
         }
+        echo "<nav class="uk-navbar-container uk-margin" uk-navbar>
+                <div class="uk-navbar-center">
+                    <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-item uk-logo" href=""> Hello $first_name</a>
+                </div>
+             </nav>"
     ?>
 
     </body>

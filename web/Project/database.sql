@@ -30,4 +30,4 @@ INSERT INTO users(first_name, last_name, email, password) VALUES ('Emma', 'Fishe
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Kate', 'Carter', 'car13044@byui.edu', 'KatePassword');
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Zach', 'Fisher', 'zach@byui.edu', 'ZachPassword');
 
-INSERT INTO posts(description_text, images, price, tips, rating) VALUES ()
+INSERT INTO posts(description_text, price, tips, rating) VALUES ('This is a cool place to go', 3, 'Do not do something stupid', 5);
