@@ -68,7 +68,18 @@
                     }
                 ?>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><?php 
+                    foreach ($db->query('SELECT title, description_text FROM posts') as $post)
+                    {
+                        $description = $post["description_text"];
+                        $title = $post["title"];
+                        
+                        if ($title == 'Walmart')
+                        {
+                            echo $description;
+                        }
+                    }
+                ?></p>
             </div>
         </div>
         <div>
@@ -115,24 +126,21 @@
                     }
                 ?>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><?php 
+                    foreach ($db->query('SELECT title, description_text FROM posts') as $post)
+                    {
+                        $description = $post["description_text"];
+                        $title = $post["title"];
+                        
+                        if ($title == 'Picnic')
+                        {
+                            echo $description;
+                        }
+                    }
+                ?></p>
             </div>
         </div>
     </div>
-
-    <?php
-
-        $first_name;
-        $last_name;
-       
-        foreach ($db->query('SELECT first_name, last_name FROM users') as $user)
-        {
-            $first_name = $user["first_name"];
-            $last_name = $user["last_name"];
-            
-            echo "<p>$first_name $last_name</p><br>";
-        }
-    ?>
 
     </body>
 </html>
