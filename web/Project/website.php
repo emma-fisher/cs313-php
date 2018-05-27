@@ -22,11 +22,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>
+            Fryday Nite
+        </title>
     </head>
     <body>
-        <h1>Fryday Nite</h1>
-
-        <ul>
+        
     <?php
        
         foreach ($db->query('SELECT first_name, last_name FROM users') as $user)
@@ -34,10 +35,9 @@
             $first_name = $user["first_name"];
             $last_name = $user["last_name"];
             
-            echo "<li>$first_name $last_name</li>";
+            echo "<li>$first_name $last_name</li><br>";
         }
     ?>
-        </ul>
 
     </body>
 </html>
