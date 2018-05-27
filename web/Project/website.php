@@ -38,12 +38,10 @@
         <div class="uk-navbar-right">
             <a class="uk-navbar-item uk-logo" href="">Hello 
             <?php 
-                for ($db->query('SELECT first_name FROM users') as $user)
-                {
+                $db->query('SELECT first_name FROM users') as $user
                     $first_name = $user["first_name"];
                     
                     echo $first_name;
-                }
             ?> </a>
         </div>
     </nav>
