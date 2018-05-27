@@ -86,12 +86,35 @@
                     }
                 ?>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><?php 
+                    foreach ($db->query('SELECT description_text FROM posts') as $post)
+                    {
+                        $description = $post["description_text"];
+                        $title = $post["title"];
+                        
+                        if ($title == 'Eat a burrito')
+                        {
+                            echo $description;
+                        }
+                    }
+                ?></p>
             </div>
         </div>
         <div>
             <div class="uk-card uk-card-default uk-card-body">
-                <h3 class="uk-card-title">Secondary</h3>
+                <h3 class="uk-card-title">
+                <?php 
+                    foreach ($db->query('SELECT title FROM posts') as $post)
+                    {
+                        $title = $post["title"];
+                        
+                        if ($title == 'Picnic')
+                        {
+                            echo $title;
+                        }
+                    }
+                ?>
+                </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
