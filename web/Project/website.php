@@ -34,9 +34,6 @@
             <div class="uk-navbar-center">
                 <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
             </div>
-            <div class="uk-navbar-right">
-                <a href="" uk-icon="icon: question; ratio:2">Help</a>
-            </div>
         </nav>
     <?php
        
@@ -45,7 +42,7 @@
             $first_name = $user["first_name"];
             $last_name = $user["last_name"];
             
-            echo "<li>$first_name $last_name</li><br>";
+            echo "<p>$first_name $last_name</p><br>";
         }
     ?>
 
