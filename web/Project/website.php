@@ -36,7 +36,7 @@
             <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
         </div>
         <div class="uk-navbar-right">
-            <a class="uk-navbar-item uk-logo" href="">Hello 
+            <a class="uk-navbar-item" href="">Hello 
             <?php 
                 foreach ($db->query('SELECT first_name FROM users') as $user)
                 {
@@ -51,6 +51,27 @@
             ?> </a>
         </div>
     </nav>
+
+    <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Default</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Primary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Secondary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
 
     <?php
 

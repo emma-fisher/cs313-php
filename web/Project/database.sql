@@ -31,3 +31,4 @@ INSERT INTO users(first_name, last_name, email, password) VALUES ('Kate', 'Carte
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Zach', 'Fisher', 'zach@byui.edu', 'ZachPassword');
 
 INSERT INTO posts(description_text, price, tips, rating) VALUES ('This is a cool place to go', 3, 'Do not do something stupid', 5);
+INSERT INTO posts(description_text, price, tips, rating) VALUES ('This place is the bomb', 50, 'One tip is to go with another couple', 5);
