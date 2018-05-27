@@ -1,8 +1,8 @@
 CREATE TABLE  posts 
 (
     id SERIAL NOT NULL PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
     description_text TEXT,
-    images BYTEA,
     price MONEY,
     tips TEXT,
     rating SMALLINT
@@ -30,5 +30,5 @@ INSERT INTO users(first_name, last_name, email, password) VALUES ('Emma', 'Fishe
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Kate', 'Carter', 'car13044@byui.edu', 'KatePassword');
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Zach', 'Fisher', 'zach@byui.edu', 'ZachPassword');
 
-INSERT INTO posts(description_text, price, tips, rating) VALUES ('This is a cool place to go', 3, 'Do not do something stupid', 5);
-INSERT INTO posts(description_text, price, tips, rating) VALUES ('This place is the bomb', 50, 'One tip is to go with another couple', 5);
+INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Walmart' ,'This is a cool place to go', 3, 'Do not do something stupid', 3);
+INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Eat a burrito', 'This type of food is the bomb', 50, 'One tip is to do it with another couple', 5);

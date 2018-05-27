@@ -52,16 +52,40 @@
         </div>
     </nav>
 
-    <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
         <div>
             <div class="uk-card uk-card-default uk-card-body">
-                <h3 class="uk-card-title">Default</h3>
+                <h3 class="uk-card-title">
+                <?php 
+                    foreach ($db->query('SELECT title FROM posts') as $post)
+                    {
+                        $title = $post["title"];
+                        
+                        if ($title == 'Walmart')
+                        {
+                            echo $title;
+                        }
+                    }
+                ?>
+                </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
         <div>
             <div class="uk-card uk-card-default uk-card-body">
-                <h3 class="uk-card-title">Primary</h3>
+                <h3 class="uk-card-title">
+                <?php 
+                    foreach ($db->query('SELECT title FROM posts') as $post)
+                    {
+                        $title = $post["title"];
+                        
+                        if ($title == 'Eat a burrito')
+                        {
+                            echo $title;
+                        }
+                    }
+                ?>
+                </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
