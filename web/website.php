@@ -28,12 +28,8 @@
 
         <ul>
     <?php
-        $users = $_GET["users"];
-        $query = "SELECT u.first_name, u.last_name FROM users u";
-        $statement = $db->prepare($query);
-        $statement->bindValue(":users", $users, PDO::PARAM_STR);
-        $statement->execute();
-        foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $user)
+       
+        foreach ($db->query('SELECT first_name, last_name FROM users') as $user)
         {
             $first_name = $user["first_name"];
             $last_name = $user["last_name"];
