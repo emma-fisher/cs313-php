@@ -38,7 +38,7 @@
         <div class="uk-navbar-right">
             <a class="uk-navbar-item uk-logo" href="">Hello 
             <?php 
-                foreach ($db->query('SELECT first_name FROM users') as $user)
+                for ($db->query('SELECT first_name FROM users') as $user)
                 {
                     $first_name = $user["first_name"];
                     
