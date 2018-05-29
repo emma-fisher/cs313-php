@@ -1,3 +1,12 @@
+CREATE TABLE  users 
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    first_name VARCHAR(40),
+    last_name VARCHAR(100),
+    email TEXT UNIQUE NOT NULL,
+    password VARCHAR(30)
+);
+
 CREATE TABLE  posts 
 (
     id SERIAL NOT NULL PRIMARY KEY,
@@ -5,18 +14,9 @@ CREATE TABLE  posts
     description_text TEXT,
     price MONEY,
     tips TEXT,
-    rating SMALLINT
+    rating SMALLINT,
+    user_id INT REFERENCES users(id)
 );
-
-CREATE TABLE  users 
-(
-    first_name VARCHAR(40),
-    last_name VARCHAR(100),
-    email TEXT UNIQUE NOT NULL PRIMARY KEY,
-    password VARCHAR(30),
-    post_id INT REFERENCES posts(id)
-);
-
 
 CREATE TABLE  categories
 (

@@ -26,7 +26,7 @@
         <script src="js/uikit-icons.js"></script>
         <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
         <title>
-            Fryday Nite
+            Friday Nite
         </title>
     </head>
     <body>
