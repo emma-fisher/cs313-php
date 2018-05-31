@@ -41,7 +41,7 @@
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a href="#">Parent</a>
+                    <a href="#">Menu</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="#">My Posts</a></li>
