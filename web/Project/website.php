@@ -56,7 +56,7 @@
                         <h3 class='uk-card-title'></h3>
                         <p>" . $title . "</p>
                     </div>
-                </div>"
+                </div>";
         }
     ?>
 
