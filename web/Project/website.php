@@ -11,7 +11,8 @@
     $query = "SELECT first_name FROM users";
     $statement = $db->prepare($query);
     //Bind any variables I need to
-    $users = $statement->execute()->fetchAll(PDO::FETCH_ASSOC);
+    $statement->execute();
+    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
