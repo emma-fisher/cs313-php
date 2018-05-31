@@ -38,7 +38,7 @@
         <div class="uk-navbar-right">
             <a class="uk-navbar-item" href="">Hello 
             <?php 
-                $db->query('SELECT first_name FROM users') as $user;
+                $user = $db->query('SELECT first_name FROM users');
                 $first_name = $user["first_name"];
                 echo $first_name;
                 
