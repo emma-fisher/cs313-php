@@ -33,7 +33,6 @@
             <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
         </div>
         <div class="uk-navbar-left">
-            <li>
                 <a href="#">Menu</a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -42,7 +41,6 @@
                         <li><a href="#">Create a Post</a></li>
                     </ul>
                 </div>
-            </li>
         </div>
     </nav>
 
