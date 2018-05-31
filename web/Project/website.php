@@ -35,32 +35,23 @@
     </nav> -->
 
     <nav class="uk-navbar-container" uk-navbar>
-
         <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active uk-logo"><a href="#">Friday Nite</a></li>
-            </ul>
+            <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
         </div>
-
         <div class="uk-navbar-right">
-
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Menu</a></li>
                 <li>
                     <a href="#">Parent</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
+                            <li class="uk-active"><a href="#">My Posts</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Create new post</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Item</a></li>
             </ul>
-
         </div>
-
     </nav>
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
