@@ -43,8 +43,8 @@
                             
                 echo "<div>
                         <div class='uk-card uk-card-default uk-card-body'>
-                            <h3 class='uk-card-title'> . $title . </h3>
-                            <p> . $description . </p>
+                            <h3 class='uk-card-title'> $title </h3>
+                            <p> $description </p>
                         </div>
                     </div>";
             }
