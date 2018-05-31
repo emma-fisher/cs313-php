@@ -52,8 +52,8 @@
             $title = $post["title"];
                         
             echo "<div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title"></h3>
+                    <div class='uk-card uk-card-default uk-card-body'>
+                        <h3 class='uk-card-title'></h3>
                         <p>" . $title . "</p>
                     </div>
                 </div>"
