@@ -12,7 +12,6 @@
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $users = $statement->execute()->fetchAll(PDO::FETCH_ASSOC);
-    echo $users;
 ?>
 <!DOCTYPE html>
 <html>
