@@ -32,3 +32,4 @@ INSERT INTO users(first_name, last_name, email, password) VALUES ('Zach', 'Fishe
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Walmart' ,'This is a cool place to go', 3, 'Do not do something stupid', 3);
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Eat a burrito', 'This type of food is the bomb', 50, 'One tip is to do it with another couple', 5);
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Picnic', 'This is a romantic idea. All you need is some food and a date to share it with!', 20, 'Light some candles to make it really romantic', 5);
+INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Pick up trash' ,'This is such a great service idea', 3, 'Take your date to do this and if they do not complain, marry them for sure!', 0);
