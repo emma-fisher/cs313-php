@@ -8,7 +8,7 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title FROM posts";
+    $query = "SELECT title, description_text FROM posts";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
@@ -50,11 +50,12 @@
         foreach ($posts as $post)
         {
             $title = $post["title"];
+            $description = $post["description_text"];
                         
             echo "<div>
                     <div class='uk-card uk-card-default uk-card-body'>
-                        <h3 class='uk-card-title'></h3>
-                        <p>" . $title . "</p>
+                        <h3 class='uk-card-title'> . $title . </h3>
+                        <p>" . $description . "</p>
                     </div>
                 </div>";
         }
