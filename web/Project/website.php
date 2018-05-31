@@ -1,23 +1,18 @@
 <?php
-    try
+    require("dbConnect.php");
+
+    $db = get_db();
+
+    if (!isset($db))
     {
-        $dbUrl = getenv('DATABASE_URL');
-        $dbopts = parse_url($dbUrl);
-        
-        $dbHost = $dbopts["host"];
-        $dbPort = $dbopts["port"];
-        $dbUser = $dbopts["user"];
-        $dbPassword = $dbopts["pass"];
-        $dbName = ltrim($dbopts["path"],'/');
-        
-        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);    
+        die("DB Connection was not set");
     }
-    catch (PDOException $ex)
-    {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
-    }
+
+    $query = "SELECT first_name FROM users";
+    $statement = $db->prepare($query);
+    //Bind any variables I need to
+    $users = $statement->execute()->fetchAll(PDO::FETCH_ASSOC);
+    echo $users;
 ?>
 <!DOCTYPE html>
 <html>
