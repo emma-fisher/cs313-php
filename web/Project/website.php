@@ -32,6 +32,18 @@
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
         </div>
+        <div class="uk-navbar-left">
+            <li>
+                <a href="#">Menu</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">My Posts</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Create a Post</a></li>
+                    </ul>
+                </div>
+            </li>
+        </div>
     </nav>
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
