@@ -41,12 +41,12 @@
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a href="#">Menu</a>
+                    <a class="uk-active" href="#">Menu</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#">My Posts</a></li>
-                            <li><a href="#">Account Settings</a></li>
-                            <li><a href="#">Create new post</a></li>
+                            <li class="uk-active"><a href="#">My Posts</a></li>
+                            <li class="uk-active"><a href="#">Account Settings</a></li>
+                            <li class="uk-active"><a href="#">Create new post</a></li>
                         </ul>
                     </div>
                 </li>
