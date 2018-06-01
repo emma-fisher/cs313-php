@@ -46,7 +46,7 @@
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="#">My Posts</a></li>
                             <li class="uk-active"><a href="#">Account Settings</a></li>
-                            <li class="uk-active"><a href="#">Create new post</a></li>
+                            <li class="uk-active"><a href="creatPost.php">Create new post</a></li>
                         </ul>
                     </div>
                 </li>
