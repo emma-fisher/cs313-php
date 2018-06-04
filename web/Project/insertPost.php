@@ -14,16 +14,19 @@
     $categoryId;
     if ($category == "outdoor") {
         $categoryId = 1;
-    };
+    }
     else if ($category == "service") {
         $categoryId = 2;
-    };
+    }
     else if ($category == "romantic") {
         $categoryId = 3;
-    };
+    }
     else if ($category == "group date") {
         $categoryId = 4;
-    };
+    }
+    else {
+        echo "error";
+    }
 
     require("dbConnect.php");
     $db = get_db();
