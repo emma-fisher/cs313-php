@@ -2,16 +2,16 @@
     $title = htmlspecialchars($_POST["title"]);
     $description = htmlspecialchars($_POST["description"]);
     $price = htmlspecialchars($_POST["price"]);
-    $category = htmlspecialchars($_POST["category"]);
-    $categories = array();
+    //$category = htmlspecialchars($_POST["category"]);
+    //$categories = array();
 	
     $tips = htmlspecialchars($_POST["tips"]);
     echo "title: $title\n";
     echo "description: $description\n";
     echo "price: $price\n";
     foreach($_POST[category] as $item) {
-        echo $item . " ";
-        array_push($categories, $item);
+        echo $item;
+        //array_push($categories, $item);
     }
     echo "tips: $tips\n";
     require("dbConnect.php");

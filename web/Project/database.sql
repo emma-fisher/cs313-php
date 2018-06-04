@@ -7,6 +7,12 @@ CREATE TABLE  users
     password VARCHAR(30)
 );
 
+CREATE TABLE  categories
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(50)
+);
+
 CREATE TABLE  posts 
 (
     id SERIAL NOT NULL PRIMARY KEY,
@@ -15,14 +21,8 @@ CREATE TABLE  posts
     price MONEY,
     tips TEXT,
     rating SMALLINT,
-    user_id INT REFERENCES users(id)
-);
-
-CREATE TABLE  categories
-(
-    id SERIAL NOT NULL PRIMARY KEY,
-    name VARCHAR(50),
-    post_id INT NOT NULL REFERENCES posts(id)
+    user_id INT REFERENCES users(id),
+    category_id INT NOT NULL REFERENCES categories(id)
 );
 
 INSERT INTO users(first_name, last_name, email, password) VALUES ('Emma', 'Fisher', 'fis17001@byui.edu', 'myPassword');
@@ -33,3 +33,8 @@ INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Walmart
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Eat a burrito', 'This type of food is the bomb', 50, 'One tip is to do it with another couple', 5);
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Picnic', 'This is a romantic idea. All you need is some food and a date to share it with!', 20, 'Light some candles to make it really romantic', 5);
 INSERT INTO posts(title, description_text, price, tips, rating) VALUES ('Pick up trash' ,'This is such a great service idea', 3, 'Take your date to do this and if they do not complain, marry them for sure!', 0);
+
+INSERT INTO categories(name) VALUES ('Outdoor');
+INSERT INTO categories(name) VALUES ('Service');
+INSERT INTO categories(name) VALUES ('Romantic');
+INSERT INTO categories(name) VALUES ('Group Date');
