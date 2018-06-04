@@ -35,7 +35,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                 </div>
 
                 <div class="uk-margin">
-                    <label><input type="number">Price</label>
+                    <input type="number">Price
                 </div>
 
                 <div class="uk-margin">
@@ -43,11 +43,13 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                 </div>
 
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox" checked> A</label>
-                    <label><input class="uk-checkbox" type="checkbox"> B</label>
+                    <label><input class="uk-checkbox" type="checkbox">Outdoor</label>
+                    <label><input class="uk-checkbox" type="checkbox">Service</label>
+                    <label><input class="uk-checkbox" type="checkbox">Romantic</label>
+                    <label><input class="uk-checkbox" type="checkbox">Group Date</label>
                 </div>
 
-                <input type="submit" value="Create">
+                <input class="uk-button-default" type="submit" value="Create">
 
             </fieldset>
         </form>
