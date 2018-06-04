@@ -43,10 +43,10 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                 </div>
 
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox" name="category[]" value="outdoor"> Outdoor</label>
-                    <label><input class="uk-checkbox" type="checkbox" name="category[]" value="service"> Service</label>
-                    <label><input class="uk-checkbox" type="checkbox" name="category[]" value="romantic"> Romantic</label>
-                    <label><input class="uk-checkbox" type="checkbox" name="category[]" value="group date"> Group Date</label>
+                    <label><input class="uk-radio" type="radio" name="category" value="outdoor"> Outdoor</label>
+                    <label><input class="uk-radio" type="radio" name="category" value="service"> Service</label>
+                    <label><input class="uk-radio" type="radio" name="category" value="romantic"> Romantic</label>
+                    <label><input class="uk-radio" type="radio" name="category" value="group date"> Group Date</label>
                 </div>
 
                 <input class="uk-button-default" type="submit" value="Create">
