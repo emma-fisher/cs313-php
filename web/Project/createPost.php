@@ -27,26 +27,26 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                 <legend class="uk-legend">Create Post</legend>
 
                 <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Title">
+                    <input class="uk-input" type="text" name="title" placeholder="Title">
                 </div>
 
                 <div class="uk-margin">
-                    <textarea class="uk-textarea" rows="5" placeholder="Description"></textarea>
+                    <textarea class="uk-textarea" rows="5" name="description" placeholder="Description"></textarea>
                 </div>
 
                 <div class="uk-margin">
-                    <input type="number">Price
+                    Price<input type="number" name="price">
                 </div>
 
                 <div class="uk-margin">
-                    <textarea class="uk-textarea" rows="5" placeholder="Tips"></textarea>
+                    <textarea class="uk-textarea" rows="5" name="tips" placeholder="Tips"></textarea>
                 </div>
 
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox">Outdoor</label>
-                    <label><input class="uk-checkbox" type="checkbox">Service</label>
-                    <label><input class="uk-checkbox" type="checkbox">Romantic</label>
-                    <label><input class="uk-checkbox" type="checkbox">Group Date</label>
+                    <label><input class="uk-checkbox" type="checkbox" name="category[]" > Outdoor</label>
+                    <label><input class="uk-checkbox" type="checkbox" name="category[]" > Service</label>
+                    <label><input class="uk-checkbox" type="checkbox" name="category[]" > Romantic</label>
+                    <label><input class="uk-checkbox" type="checkbox" name="category[]" > Group Date</label>
                 </div>
 
                 <input class="uk-button-default" type="submit" value="Create">
