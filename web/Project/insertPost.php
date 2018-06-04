@@ -3,11 +3,15 @@
     $description = htmlspecialchars($_POST["description"]);
     $price = htmlspecialchars($_POST["price"]);
     $category = htmlspecialchars($_POST["category"]);
+    $categories = array();
+	foreach($_POST[category] as $item) {
+			array_push($categories, $item);
+		}
     $tips = htmlspecialchars($_POST["tips"]);
     echo "title: $title\n";
     echo "description: $description\n";
     echo "price: $price\n";
-    echo "category: $category\n";
+    echo "category: $categories\n";
     echo "tips: $tips\n";
     require("dbConnect.php");
     $db = get_db();
