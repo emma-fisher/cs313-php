@@ -8,7 +8,7 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, rating FROM posts";
+    $query = "SELECT title, description_text, price, tips, rating, id FROM posts";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
@@ -63,15 +63,16 @@
                 $price = $post["price"];
                 $tips = $post["tips"];
                 $rating = $post["rating"];
+                $id = $post["id"];
                             
                 echo "<div>
                         <div class='uk-card uk-card-default uk-card-body'>
                             <h3 class='uk-card-title'> $title </h3>
                             <p> $description </p>
-                            <a class='uk-button uk-button-default uk-button-small' href='#modal-center' uk-toggle>See More</a>
+                            <a class='uk-button uk-button-default uk-button-small' href='#modal-center-$id' uk-toggle>See More</a>
                         </div>
                     </div>
-                    <div id='modal-center' class='uk-flex-top' uk-modal>
+                    <div id='modal-center-$id' class='uk-flex-top' uk-modal>
                         <div class='uk-modal-dialog uk-modal-body uk-margin-auto-vertical'>
                             <button class='uk-modal-close-default' type='button' uk-close></button>
                             <h3> $title - $price </h3>
