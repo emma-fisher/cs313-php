@@ -104,7 +104,7 @@
                             <ul>
                                 <li> $tips </li>
                             </ul>
-                            <h4> $rating <a href='increaseRating()' uk-icon='heart'></a> </h4>
+                            <h4> $rating <a onclick='increaseRating()' uk-icon='heart'></a> </h4>
                         </div>
                     </div>";
             }
