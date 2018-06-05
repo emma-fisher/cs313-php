@@ -72,6 +72,7 @@
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
         <?php 
+
             foreach ($posts as $post)
             {
                 $title = $post["title"];
@@ -80,6 +81,12 @@
                 $tips = $post["tips"];
                 $rating = $post["rating"];
                 $id = $post["id"];
+
+                function increaseRating()
+                {
+                    echo "in the function";
+                    $rating = $rating + 1;
+                }
                             
                 echo "<div>
                         <div class='uk-card uk-card-default uk-card-body'>
@@ -97,7 +104,7 @@
                             <ul>
                                 <li> $tips </li>
                             </ul>
-                            <h4> $rating <a href='javascript:onclick=$rating++' uk-icon='heart'></a> </h4>
+                            <h4> $rating <a href='increaseRating()' uk-icon='heart'></a> </h4>
                         </div>
                     </div>";
             }
