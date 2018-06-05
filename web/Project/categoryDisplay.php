@@ -1,5 +1,5 @@
 <?php
-    $categoryId = htmlspecialchars($_POST["category"]);
+    $categoryId = htmlspecialchars($_GET["category"]);
 
     require("dbConnect.php");
     
@@ -67,8 +67,8 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
                 $category_id = $post["category_id"];
-                echo $category_id;
-                echo $categoryId;
+                echo "from database" . $category_id;
+                echo "from url" . $categoryId;
                 
                 if ($category_id == $categoryId){
 
