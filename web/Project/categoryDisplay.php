@@ -28,14 +28,6 @@
     </head>
     <body>
 
-   
-        
-    <!-- <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
-        </div>
-    </nav> -->
-
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">Frighday Nite</a>
@@ -75,6 +67,8 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
                 $category_id = $post["category_id"];
+                echo $category_id;
+                echo $categoryId;
                 
                 if ($category_id == $categoryId){
 
