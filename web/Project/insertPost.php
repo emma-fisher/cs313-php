@@ -38,6 +38,6 @@
     $statement->bindValue(":price", $price, PDO::PARAM_INT);
     $statement->bindValue(":tips", $tips, PDO::PARAM_STR);
     $statement->execute();
-    //header("Location: courseDetails.php?course_id=$courseId");
+    header("Location: website.php");
     die();
 ?>
