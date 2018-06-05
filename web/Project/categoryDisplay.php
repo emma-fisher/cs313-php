@@ -50,7 +50,15 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a class="uk-active" href="website.php">Home</a>
+                <a class="uk-active" href="#">Categories</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="categoryDisplay.php?category=3" id="romantic">Romantic</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=1" id="outdoor">Outdoor</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=2" id="service">Service</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=4" id="groupDate">Group Date</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>

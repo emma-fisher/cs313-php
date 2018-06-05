@@ -47,7 +47,7 @@
                             <li class="uk-active"><a href="#">My Posts</a></li>
                             <li class="uk-active"><a href="#">Account Settings</a></li>
                             <li class="uk-active"><a href="createPost.php">Create new post</a></li>
-
+                            <li class="uk-active"><a href="website.php">Home</a></li>
                         </ul>
                     </div>
                 </li>
