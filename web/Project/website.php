@@ -72,17 +72,19 @@
                         </div>
                     </div>
 
+                    ";
                     <div id='modal-center' class='uk-flex-top' uk-modal>
                         <div class='uk-modal-dialog uk-modal-body uk-margin-auto-vertical'>
                             <button class='uk-modal-close-default' type='button' uk-close></button>
                             <h3> $title - $price </h3>
                             <p> $description </p>
-                            <ul>Tips:
+                            <h6> Tips:
+                            <ul>
                                 <li> $tips </li>
                             </ul>
                             <h4> $rating / 5 stars </h4>
                         </div>
-                    </div>";
+                    </div>
             }
         ?>
         
