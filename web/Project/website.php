@@ -97,7 +97,7 @@
                             <ul>
                                 <li> $tips </li>
                             </ul>
-                            <h4> $rating / 5 stars </h4>
+                            <h4> $rating <a href="" uk-icon="heart"></a> </h4>
                         </div>
                     </div>";
             }
