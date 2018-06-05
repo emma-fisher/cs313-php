@@ -59,10 +59,10 @@
                     <a class="uk-active" href="#">Categories</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="categoryDisplay.php?category=romantic" id="romantic">Romantic</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=outdoor" id="outdoor">Outdoor</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=service" id="service">Service</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=groupDate" id="groupDate">Group Date</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=3" id="romantic">Romantic</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=1" id="outdoor">Outdoor</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=2" id="service">Service</a></li>
+                            <li class="uk-active"><a href="categoryDisplay.php?category=4" id="groupDate">Group Date</a></li>
                         </ul>
                     </div>
                 </li>
