@@ -1,6 +1,6 @@
 <?php
     require("dbConnect.php");
-
+    
     $db = get_db();
 
     if (!isset($db))
@@ -56,15 +56,7 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a class="uk-active" href="#">Categories</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="categoryDisplay.php?category=romantic" id="romantic">Romantic</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=outdoor" id="outdoor">Outdoor</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=service" id="service">Service</a></li>
-                            <li class="uk-active"><a href="categoryDisplay.php?category=groupDate" id="groupDate">Group Date</a></li>
-                        </ul>
-                    </div>
+                    <a class="uk-active" href="website.php">Home</a>
                 </li>
             </ul>
         </div>
