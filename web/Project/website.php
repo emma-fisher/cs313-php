@@ -77,10 +77,10 @@
                             <button class='uk-modal-close-default' type='button' uk-close></button>
                             <h3> $title - $price </h3>
                             <p> $description </p>
-                            <ul>
+                            <ul>Tips:
                                 <li> $tips </li>
                             </ul>
-                            <h4> $rating </h4>
+                            <h4> $rating / 5 stars </h4>
                         </div>
                     </div>";
             }
