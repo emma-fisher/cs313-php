@@ -71,8 +71,6 @@
                             <a class='uk-button uk-button-default uk-button-small' href='#modal-center' uk-toggle>See More</a>
                         </div>
                     </div>
-
-                    ";
                     <div id='modal-center' class='uk-flex-top' uk-modal>
                         <div class='uk-modal-dialog uk-modal-body uk-margin-auto-vertical'>
                             <button class='uk-modal-close-default' type='button' uk-close></button>
@@ -84,7 +82,7 @@
                             </ul>
                             <h4> $rating / 5 stars </h4>
                         </div>
-                    </div>
+                    </div>";
             }
         ?>
         
