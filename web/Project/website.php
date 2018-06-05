@@ -72,7 +72,11 @@
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
         <?php 
-
+            function increaseRating()
+            {
+                echo "in the function";
+                $rating = $rating + 1;
+            }
             foreach ($posts as $post)
             {
                 $title = $post["title"];
@@ -82,11 +86,7 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
 
-                function increaseRating()
-                {
-                    echo "in the function";
-                    $rating = $rating + 1;
-                }
+                
                             
                 echo "<div>
                         <div class='uk-card uk-card-default uk-card-body'>
