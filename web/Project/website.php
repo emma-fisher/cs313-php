@@ -65,7 +65,7 @@
                         <div class='uk-card uk-card-default uk-card-body'>
                             <h3 class='uk-card-title'> $title </h3>
                             <p> $description </p>
-                            <a class='uk-button uk-button-default' href='#modal-center' uk-toggle>Open</a>
+                            <a class='uk-button uk-button-default uk-button-small' href='#modal-center' uk-toggle>See More</a>
                         </div>
                     </div>
 
