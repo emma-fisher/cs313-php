@@ -67,8 +67,6 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
                 $category_id = $post["category_id"];
-                echo "from database" . $category_id;
-                echo "from url" . $categoryId;
                 
                 if ($category_id == $categoryId){
 
