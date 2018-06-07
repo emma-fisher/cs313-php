@@ -13,7 +13,7 @@ require("dbConnect.php");
 $db = get_db();
 $query = "INSERT INTO users (email, password) VALUES(:email, :password)";
 $statement = $db->prepare($query);
-$statement->bindValue(':email', $username, PDO::PARAM_STR);
+$statement->bindValue(':email', $email, PDO::PARAM_STR);
 $statement->bindValue(':password', $hashedPassword, PDO::PARAM_STR);
 $statement->execute();
 // finally, redirect them to the sign in page

@@ -3,7 +3,7 @@ CREATE TABLE  users
     id SERIAL NOT NULL PRIMARY KEY,
     first_name VARCHAR(40),
     last_name VARCHAR(100),
-    email TEXT UNIQUE NOT NULL,
+    email VARCHAR(70) UNIQUE NOT NULL,
     password VARCHAR(255)
 );
 
