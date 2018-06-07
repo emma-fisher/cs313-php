@@ -4,7 +4,8 @@
 // get the data from the POST
 $email = htmlspecialchars($_POST['email']);
 $password = htmlspecialchars($_POST['password']);
-
+echo $email;
+echo $password;
 // Get the hashed password.
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 // Connect to the database
