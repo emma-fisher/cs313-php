@@ -1,40 +1,19 @@
 
 <?php
-/**********************************************************
-* File: createAccount.php
-* Author: Br. Burton
-* 
-* Description: Accepts a new username and password on the
-*	POST variable, and creates it in the DB.
-*
-* The user is then redirected to the signIn.php page.
-*
-***********************************************************/
 
 // get the data from the POST
 $username = htmlspecialchars($_POST['txtUser']);
-$password = $_POST['txtPassword'];
-if (!isset($username) || $username == ""
-	|| !isset($password) || $password == "")
-{
-	header("Location: signUp.php");
-	die(); // we always include a die after redirects.
-}
-// Let's not allow HTML in our usernames. It would be best to also detect this before
-// submitting the form and preven the submission.
-$username = htmlspecialchars($username);
+$password = htmlspecialchars($_POST['txtPassword']);
+
 // Get the hashed password.
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 // Connect to the database
 require("dbConnect.php");
 $db = get_db();
-$query = 'INSERT INTO users(email, password) VALUES(:username, :password)';
+$query = "INSERT INTO users (email, password) VALUES(:username, :password)";
 $statement = $db->prepare($query);
-$statement->bindValue(':username', $username);
-// **********************************************
-// NOTICE: We are submitting the hashed password!
-// **********************************************
-$statement->bindValue(':password', $hashedPassword);
+$statement->bindValue(':username', $username, PDO::PARAM_STR);
+$statement->bindValue(':password', $hashedPassword, PDO::PARAM_STR);
 $statement->execute();
 // finally, redirect them to the sign in page
 header("Location: signIn.php");
