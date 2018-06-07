@@ -1,4 +1,5 @@
 <?php
+// https://www.google.com/search?q=thumbs+up+rating+wiht+php&rlz=1C1CHBF_enUS761US761&oq=thumbs+up+rating+wiht+php&aqs=chrome..69i57.3948j1j7&sourceid=chrome&ie=UTF-8
     require("dbConnect.php");
 
     $db = get_db();
