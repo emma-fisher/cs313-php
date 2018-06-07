@@ -1,7 +1,7 @@
 <?php
-// https://www.google.com/search?q=thumbs+up+rating+wiht+php&rlz=1C1CHBF_enUS761US761&oq=thumbs+up+rating+wiht+php&aqs=chrome..69i57.3948j1j7&sourceid=chrome&ie=UTF-8
-    require("dbConnect.php");
 
+    require("dbConnect.php");
+    
     $db = get_db();
 
     if (!isset($db))
@@ -9,11 +9,16 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, rating, id FROM posts ORDER BY rating DESC";
+    $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
     $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    $query2 = "SELECT id FROM users";
+    $statement2 = $db->prepare($query2);
+    $statement2->execute();
+    $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,17 +32,9 @@
     </head>
     <body>
 
-   
-        
-    <!-- <nav class="uk-navbar-container uk-margin" uk-navbar>
-        <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">Fryday Nite</a>
-        </div>
-    </nav> -->
-
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">Friday Nite</a>
+            <a class="uk-navbar-item uk-logo" href="">Frighday Nite</a>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
@@ -46,8 +43,8 @@
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="website.php">Home</a></li>
-                            <li class="uk-active"><a href="myPosts.php">My Posts</a></li>
-                            <li class="uk-active"><a href="signOut.php">Sign Out</a></li>
+                            <li class="uk-active"><a href="#">My Posts</a></li>
+                            <li class="uk-active"><a href="#">Account Settings</a></li>
                             <li class="uk-active"><a href="createPost.php">Create new post</a></li>
                         </ul>
                     </div>
@@ -57,7 +54,7 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a class="uk-active" href="#">Categories</a>
+                <a class="uk-active" href="#">Categories</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="categoryDisplay.php?category=3" id="romantic">Romantic</a></li>
@@ -73,11 +70,6 @@
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
         <?php 
-            function increaseRating()
-            {
-                echo "in the function";
-                $rating = $rating + 1;
-            }
             foreach ($posts as $post)
             {
                 $title = $post["title"];
@@ -86,28 +78,30 @@
                 $tips = $post["tips"];
                 $rating = $post["rating"];
                 $id = $post["id"];
-
+                $category_id = $post["category_id"];
                 
-                            
-                echo "<div>
-                        <div class='uk-card uk-card-default uk-card-body'>
-                            <h3 class='uk-card-title'> $title </h3>
-                            <p> $description </p>
-                            <a class='uk-button uk-button-default uk-button-small' href='#modal-center-$id' uk-toggle>See More</a>
+                if ($category_id == $categoryId){
+
+                    echo "<div>
+                            <div class='uk-card uk-card-default uk-card-body'>
+                                <h3 class='uk-card-title'> $title </h3>
+                                <p> $description </p>
+                                <a class='uk-button uk-button-default uk-button-small' href='#modal-center-$id' uk-toggle>See More</a>
+                            </div>
                         </div>
-                    </div>
-                    <div id='modal-center-$id' class='uk-flex-top' uk-modal>
-                        <div class='uk-modal-dialog uk-modal-body uk-margin-auto-vertical'>
-                            <button class='uk-modal-close-default' type='button' uk-close></button>
-                            <h3> $title - $price </h3>
-                            <p> $description </p>
-                            <h6> Tips:
-                            <ul>
-                                <li> $tips </li>
-                            </ul>
-                            <h4> $rating <a onclick='increaseRating();' uk-icon='heart'></a> </h4>
-                        </div>
-                    </div>";
+                        <div id='modal-center-$id' class='uk-flex-top' uk-modal>
+                            <div class='uk-modal-dialog uk-modal-body uk-margin-auto-vertical'>
+                                <button class='uk-modal-close-default' type='button' uk-close></button>
+                                <h3> $title - $price </h3>
+                                <p> $description </p>
+                                <h6> Tips:
+                                <ul>
+                                    <li> $tips </li>
+                                </ul>
+                                <h4> $rating / 5 stars </h4>
+                            </div>
+                        </div>";
+                }
             }
         ?>
         

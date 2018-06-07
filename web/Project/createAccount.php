@@ -12,7 +12,7 @@
 ***********************************************************/
 
 // get the data from the POST
-$username = $_POST['txtUser'];
+$username = htmlspecialchars($_POST['txtUser']);
 $password = $_POST['txtPassword'];
 if (!isset($username) || $username == ""
 	|| !isset($password) || $password == "")
