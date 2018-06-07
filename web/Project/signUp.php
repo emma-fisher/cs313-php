@@ -13,8 +13,8 @@
 
 <form id="mainForm" action="createAccount.php" method="POST">
 
-	<input type="text" name="email" placeholder="Username">
-	<label for="email">Username</label>
+	<input type="email" name="email" placeholder="Username">
+	<label for="email">Email</label>
 	<br /><br />
 
 	<input type="password" name="password" placeholder="Password"></input>

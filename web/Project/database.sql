@@ -4,7 +4,7 @@ CREATE TABLE  users
     first_name VARCHAR(40),
     last_name VARCHAR(100),
     email TEXT UNIQUE NOT NULL,
-    password VARCHAR(30)
+    password VARCHAR(255)
 );
 
 CREATE TABLE  categories
