@@ -9,7 +9,7 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, rating, id FROM posts";
+    $query = "SELECT title, description_text, price, tips, rating, id FROM posts ORDER BY rating DESC";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
