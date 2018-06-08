@@ -35,9 +35,12 @@ if (isset($_POST['email']) && isset($_POST['password']))
 	{
 		$row = $statement->fetch();
 		$hashedPasswordFromDB = $row['password'];
+		echo $hashedPasswordFromDB;
+		echo $password;
 		// now check to see if the hashed password matches
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
+			echo "hello!";
 			// password was correct, put the user on the session, and redirect to home
 			$_SESSION['email'] = $email;
 			header("Location: website.php");
