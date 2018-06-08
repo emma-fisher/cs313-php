@@ -22,14 +22,14 @@ $badLogin = false;
 if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 {
 	// they have submitted a username and password for us to check
-	$username = $_POST['txtUser'];
-	$password = $_POST['txtPassword'];
+	$email = $_POST['email'];
+	$password = $_POST['password'];
 	// Connect to the DB
 	require("dbConnect.php");
 	$db = get_db();
-	$query = 'SELECT password FROM users WHERE username=:username';
+	$query = 'SELECT password FROM users WHERE email=:email';
 	$statement = $db->prepare($query);
-	$statement->bindValue(':username', $username);
+	$statement->bindValue(':email', $email);
 	$result = $statement->execute();
 	if ($result)
 	{
@@ -39,9 +39,8 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 		if (password_verify($password, $hashedPasswordFromDB))
 		{
 			// password was correct, put the user on the session, and redirect to home
-			$_SESSION['username'] = $username;
+			$_SESSION['email'] = $email;
 			header("Location: website.php");
-			exit();
 			die(); // we always include a die after redirects.
 		}
 		else
@@ -78,12 +77,12 @@ if ($badLogin)
 
 <form id="mainForm" action="signIn.php" method="POST">
 
-	<input type="text" id="txtUser" name="txtUser" placeholder="Username">
-	<label for="txtUser">Username</label>
+	<input type="email" name="email" placeholder="Email">
+	<label for="email">Email</label>
 	<br /><br />
 
-	<input type="password" id="txtPassword" name="txtPassword" placeholder="Password">
-	<label for="txtPassword">Password</label>
+	<input type="password" name="password" placeholder="Password">
+	<label for="password">Password</label>
 	<br /><br />
 
 	<input type="submit" value="Sign In" />
