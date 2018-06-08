@@ -19,7 +19,7 @@ session_start();
 $badLogin = false;
 // First check to see if we have post variables, if not, just
 // continue on as always.
-if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
+if (isset($_POST['email']) && isset($_POST['password']))
 {
 	// they have submitted a username and password for us to check
 	$email = $_POST['email'];
