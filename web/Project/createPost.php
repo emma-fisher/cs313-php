@@ -26,7 +26,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                     </div>
 
                     <div class="uk-margin">
-                        <label>Price<input class="uk-input" type="number uk-width-1-2" name="price"></label>
+                        <label>Price<input class="uk-number" type="number uk-width-1-2" name="price"></label>
                     </div>
 
                     <div class="uk-margin">
