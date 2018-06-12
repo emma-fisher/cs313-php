@@ -47,6 +47,7 @@
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="website.php">Home</a></li>
                             <li class="uk-active"><a href="myPosts.php">My Posts</a></li>
+                            <li class="uk-active"><a href="signIn.php">Sign In</a></li>
                             <li class="uk-active"><a href="signOut.php">Sign Out</a></li>
                             <li class="uk-active"><a href="createPost.php">Create new post</a></li>
                         </ul>
