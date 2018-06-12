@@ -57,15 +57,12 @@
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="website.php">Home</a></li>
                             <li class="uk-active"><a href="#">My Posts</a></li>
-                            <li class="uk-active"><a href="#">Account Settings</a></li>
+                            <li class="uk-active"><a href="signIn.php">Sign In</a></li>
+                            <li class="uk-active"><a href="signOut.php">Sign Out</a></li>
                             <li class="uk-active"><a href="createPost.php">Create new post</a></li>
                         </ul>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
+                </li>    
                 <li>
                 <a class="uk-active" href="categoryDisplay.php">Categories</a>
                     <div class="uk-navbar-dropdown">
