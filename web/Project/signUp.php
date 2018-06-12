@@ -14,7 +14,7 @@
 <div>
 
 <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m uk-position-center">
-    <h3 class="uk-card-title">Sign up for a new account:</h3>
+    <h3 class="uk-card-title">Create a new account:</h3>
 
     <form id="mainForm" action="createAccount.php" method="POST">
 
