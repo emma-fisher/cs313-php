@@ -5,6 +5,7 @@
 
     if (!isset($db))
     {
+        echo "hello";
         die("DB Connection was not set");
     }
 
