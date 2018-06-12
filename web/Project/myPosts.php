@@ -25,18 +25,11 @@
         
         $email = $_SESSION['email'];
         $password = $_SESSION['password'];
-        echo $email;
         $query = "SELECT title, description_text, price, tips, rating, id, category_id, user_id FROM posts WHERE user_id='$email'";
         $statement = $db->prepare($query);
         //Bind any variables I need to
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-        // $query2 = "SELECT id FROM users WHERE first_name='Emma'";
-        // $statement2 = $db->prepare($query2);
-        // $statement2->execute();
-        // $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
-        // echo 'users' . $users;
     }
     
 ?>
@@ -99,7 +92,6 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
                 $user_id = $post["user_id"];
-                echo $user_id;
                 
                 if ($id){
 

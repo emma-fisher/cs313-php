@@ -75,7 +75,6 @@
         <?php 
             function increaseRating()
             {
-                echo "in the function";
                 $rating = $rating + 1;
             }
             foreach ($posts as $post)
