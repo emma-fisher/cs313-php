@@ -7,5 +7,6 @@
 }
 
 body {
-    background-image: url("clouds.jpeg");
+    background-image: url("clouds.jpg");
+    height: 100%;
 }
