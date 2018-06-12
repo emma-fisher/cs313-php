@@ -101,7 +101,7 @@
                 $rating = $post["rating"];
                 $id = $post["id"];
                 
-                if ($userId){
+                if ($id){
 
                     echo "<div>
                             <div class='uk-card uk-card-default uk-card-body'>
