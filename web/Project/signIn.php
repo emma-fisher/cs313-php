@@ -50,6 +50,7 @@ if (isset($_POST['email']) && isset($_POST['password']))
 	<script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.js"></script>
     <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+	<link rel="stylesheet" href="website.css" type="text/css">
 	<title>Sign In</title>
 </head>
 
@@ -75,7 +76,7 @@ if ($badLogin)
 	<input class="uk-input" type="password" name="password" placeholder="Password">
 	<br /><br />
 
-	<input class="uk-input uk-width-1-2 uk-position-center" type="submit" value="Sign In" />
+	<input class="uk-input uk-width-1-2 uk-position-center" id="sign-in-button" type="submit" value="Sign In" />
 
 	</form>
 
