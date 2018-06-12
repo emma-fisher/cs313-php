@@ -1,4 +1,16 @@
 <?php
+
+    session_start();
+    if (isset($_SESSION['email']))
+    {
+        $email = $_SESSION['email'];
+    }
+    else
+    {
+        header("Location: signIn.php");
+        die(); // we always include a die after redirects.
+    }
+
     $categoryId = htmlspecialchars($_GET["category"]);
 
     require("dbConnect.php");

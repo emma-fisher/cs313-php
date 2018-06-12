@@ -6,9 +6,8 @@
     margin-top: 160px;
 }
 
-#create-post-button {
+input#create-post-button {
     margin-top: 270px;
-    background-color: red;
 }
 
 body {
