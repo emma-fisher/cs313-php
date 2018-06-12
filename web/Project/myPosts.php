@@ -4,7 +4,6 @@
     if (isset($_SESSION['email']))
     {
         $email = $_SESSION['email'];
-        echo $email;
     }
     else
     {
@@ -20,13 +19,11 @@
     {
         die("DB Connection was not set");
     }
-    echo "email" . $_SESSION['email'];
 
     if (isset($_SESSION['email']))
     {
         
         $email = $_SESSION['email'];
-        echo "hello there" . $email;
 	    $password = $_SESSION['password'];
         $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
         $statement = $db->prepare($query);
@@ -34,11 +31,11 @@
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-        // $query2 = "SELECT id FROM users WHERE email=$email";
-        // $statement2 = $db->prepare($query2);
-        // $statement2->execute();
-        // $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
-        // echo 'users' . $users;
+        $query2 = "SELECT id FROM users WHERE email=$email";
+        $statement2 = $db->prepare($query2);
+        $statement2->execute();
+        $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
+        echo 'users' . $users;
     }
     
 ?>
