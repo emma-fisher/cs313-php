@@ -63,21 +63,24 @@ if ($badLogin)
 }
 ?>
 
-<h1>Please sign in below:</h1>
 
-<form id="mainForm" action="signIn.php" method="POST">
+<div class="uk-card uk-card-default uk-card-body uk-width-1-4@m uk-position-center">
+    <h3 class="uk-card-title">Please sign in below:</h3>
 
-	<label>Email<input class= "uk-input uk-width-1-4" type="email" name="email" placeholder="Email"></label>
-	<!-- <label for="email">Email</label> -->
+    <form id="mainForm" action="signIn.php" method="POST">
+
+	<input class= "uk-input uk-width-1-4" type="email" name="email" placeholder="Email">
 	<br /><br />
 
-	<label>Password<input class="uk-input uk-width-1-4" type="password" name="password" placeholder="Password"></label>
-	<!-- <label for="password">Password</label> -->
+	<input class="uk-input uk-width-1-4" type="password" name="password" placeholder="Password">
 	<br /><br />
 
 	<input class="uk-input uk-width-1-6" type="submit" value="Sign In" />
 
-</form>
+	</form>
+</div>
+
+
 
 <br /><br />
 
