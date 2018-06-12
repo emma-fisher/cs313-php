@@ -11,3 +11,7 @@ body {
     padding-bottom: 68px;
     background-repeat: repeat;
 }
+
+.uk-navbar-container {
+    margin-top: 30px;
+}
