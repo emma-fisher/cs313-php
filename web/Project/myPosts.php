@@ -97,6 +97,8 @@
                 $tips = $post["tips"];
                 $rating = $post["rating"];
                 $id = $post["id"];
+                $user_id = $post["user_id"];
+                echo $user_id;
                 
                 if ($id){
 
