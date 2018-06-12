@@ -9,8 +9,9 @@
     {
         die("DB Connection was not set");
     }
+    echo "email" . $_SESSION['email'];
 
-    if (isset($_SESSION['email']) && isset($_SESSION['password']))
+    if (isset($_SESSION['email']))
     {
         
         $email = $_SESSION['email'];
