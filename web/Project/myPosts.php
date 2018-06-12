@@ -49,6 +49,7 @@
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">Friday Nite</a>
         </div>
+        <div class="uk-navbar-right"> Hello <?php $email ?> </div>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
