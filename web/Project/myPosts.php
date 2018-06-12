@@ -8,7 +8,7 @@
         die("DB Connection was not set");
     }
 
-    echo $_POST["email"];
+    echo "email" . $_POST["email"];
     if (isset($_POST['email']) && isset($_POST['password']))
     {
         $email = $_POST['email'];
@@ -19,11 +19,11 @@
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-        $query2 = "SELECT id FROM users WHERE email=$email";
-        $statement2 = $db->prepare($query2);
-        $statement2->execute();
-        $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
-        echo 'users' . $users;
+        // $query2 = "SELECT id FROM users WHERE email=$email";
+        // $statement2 = $db->prepare($query2);
+        // $statement2->execute();
+        // $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
+        // echo 'users' . $users;
     }
     
 ?>
