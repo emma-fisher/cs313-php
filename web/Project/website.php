@@ -28,7 +28,7 @@
     <body>
 <?php
     $userinfo = posix_getpwuid(3);
-    echo $userinfo;
+    print_r($userinfo);
 ?>
    
         
