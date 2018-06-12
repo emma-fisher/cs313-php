@@ -18,10 +18,10 @@
 
     <form id="mainForm" action="createAccount.php" method="POST">
 
-	<input type="text" name="first_name" placeholder="First Name">
+	<input class="uk-input" type="text" name="first_name" placeholder="First Name">
 	<br /><br />
 
-	<input type="text" name="last_name" placeholder="Last Name">
+	<input class="uk-input" type="text" name="last_name" placeholder="Last Name">
 	<br /><br />
 
 	<input class= "uk-input" type="email" name="email" placeholder="Email">
@@ -30,7 +30,7 @@
 	<input class="uk-input" type="password" name="password" placeholder="Password">
 	<br /><br />
 
-	<input class="uk-input uk-width-1-2 uk-position-center" id="sign-in-button" type="submit" value="Create Account" />
+	<input class="uk-input uk-width-1-2 uk-position-center" id="sign-up-button" type="submit" value="Create Account" />
 
 	</form>
 
