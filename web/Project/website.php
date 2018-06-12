@@ -26,10 +26,6 @@
         </title>
     </head>
     <body>
-<?php
-    $userinfo = posix_getpwuid(3);
-    print_r($userinfo);
-?>
    
         
     <!-- <nav class="uk-navbar-container uk-margin" uk-navbar>
