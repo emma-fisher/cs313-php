@@ -1,5 +1,16 @@
 <?php
-// https://www.google.com/search?q=thumbs+up+rating+wiht+php&rlz=1C1CHBF_enUS761US761&oq=thumbs+up+rating+wiht+php&aqs=chrome..69i57.3948j1j7&sourceid=chrome&ie=UTF-8
+
+    session_start();
+    if (isset($_SESSION['email']))
+    {
+        $email = $_SESSION['email'];
+    }
+    else
+    {
+        header("Location: signIn.php");
+        die(); // we always include a die after redirects.
+    }
+
     require("dbConnect.php");
 
     $db = get_db();
