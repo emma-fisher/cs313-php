@@ -1,4 +1,6 @@
 <?php
+
+    session_start();
     require("dbConnect.php");
     
     $db = get_db();
@@ -8,11 +10,12 @@
         die("DB Connection was not set");
     }
 
-    echo "email" . $_POST["email"];
-    if (isset($_POST['email']) && isset($_POST['password']))
+    if (isset($_SESSION['email']) && isset($_SESSION['password']))
     {
-        $email = $_POST['email'];
-	    $password = $_POST['password'];
+        
+        $email = $_SESSION['email'];
+        echo "hello there" . $email;
+	    $password = $_SESSION['password'];
         $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
         $statement = $db->prepare($query);
         //Bind any variables I need to
