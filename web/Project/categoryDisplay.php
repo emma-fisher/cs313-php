@@ -30,7 +30,7 @@
 
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">Frighday Nite</a>
+            <a class="uk-navbar-item uk-logo" href="">Friday Nite</a>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">

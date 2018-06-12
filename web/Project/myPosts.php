@@ -1,5 +1,4 @@
 <?php
-
     require("dbConnect.php");
     
     $db = get_db();
@@ -9,16 +8,22 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
-    $statement = $db->prepare($query);
-    //Bind any variables I need to
-    $statement->execute();
-    $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+    if (isset($_POST['email']) && isset($_POST['password']))
+    {
+        $email = $_POST['email'];
+	    $password = $_POST['password'];
+        $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
+        $statement = $db->prepare($query);
+        //Bind any variables I need to
+        $statement->execute();
+        $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    $query2 = "SELECT id FROM users";
-    $statement2 = $db->prepare($query2);
-    $statement2->execute();
-    $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
+        $query2 = "SELECT id FROM users";
+        $statement2 = $db->prepare($query2);
+        $statement2->execute();
+        $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,7 +39,7 @@
 
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="">Frighday Nite</a>
+            <a class="uk-navbar-item uk-logo" href="">Friday Nite</a>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
@@ -54,7 +59,7 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
-                <a class="uk-active" href="#">Categories</a>
+                <a class="uk-active" href="categoryDisplay.php">Categories</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="categoryDisplay.php?category=3" id="romantic">Romantic</a></li>
@@ -78,9 +83,8 @@
                 $tips = $post["tips"];
                 $rating = $post["rating"];
                 $id = $post["id"];
-                $category_id = $post["category_id"];
                 
-                if ($category_id == $categoryId){
+                if ($userId){
 
                     echo "<div>
                             <div class='uk-card uk-card-default uk-card-body'>
