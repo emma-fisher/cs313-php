@@ -25,7 +25,7 @@
         
         $email = $_SESSION['email'];
 	    $password = $_SESSION['password'];
-        $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts, users WHERE user_id=users.id";
+        $query = "SELECT title, description_text, price, tips, rating, posts.id, category_id FROM posts, users WHERE user_id=users.id";
         $statement = $db->prepare($query);
         //Bind any variables I need to
         $statement->execute();
