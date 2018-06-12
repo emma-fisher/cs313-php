@@ -22,6 +22,7 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.js"></script>
         <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+        <link rel="stylesheet" href=".css" type="twebsiteext/css">
         <title>
             Friday Nite
         </title>
@@ -39,16 +40,13 @@
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="website.php">Home</a></li>
-                            <li class="uk-active"><a href="#">My Posts</a></li>
-                            <li class="uk-active"><a href="#">Account Settings</a></li>
+                            <li class="uk-active"><a href="myPosts.php">My Posts</a></li>
+                            <li class="uk-active"><a href="signIn.php">Sign In</a></li>
+                            <li class="uk-active"><a href="signOut.php">Sign Out</a></li>
                             <li class="uk-active"><a href="createPost.php">Create new post</a></li>
                         </ul>
                     </div>
                 </li>
-            </ul>
-        </div>
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
                 <li>
                 <a class="uk-active" href="#">Categories</a>
                     <div class="uk-navbar-dropdown">
