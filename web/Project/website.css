@@ -6,6 +6,10 @@
     margin-top: 160px;
 }
 
+#create-post-button {
+    margin-top: 100px;
+}
+
 body {
     background-image: url("bubbles.jpg");
     padding-bottom: 68px;

@@ -8,6 +8,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.js"></script>
         <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+        <link rel="stylesheet" href="website.css" type="text/css">
         <title></title>
     </head>
     <body>
@@ -26,7 +27,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                     </div>
 
                     <div class="uk-margin">
-                        <label>Price<input class="uk-number" type="number uk-width-1-2" name="price"></label>
+                        <label>Price<input class="uk-input uk-width-1-4" type="number uk-width-1-2" name="price"></label>
                     </div>
 
                     <div class="uk-margin">
@@ -40,7 +41,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                         <label><input class="uk-radio" type="radio" name="category" value="group date"> Group Date</label>
                     </div>
 
-                    <input class="uk-input uk-width-1-4" type="submit" value="Create">
+                    <input class="uk-input uk-width-1-4 uk-position-center" type="submit" id="create-post-button" value="Create">
 
             </form>
         </div>
