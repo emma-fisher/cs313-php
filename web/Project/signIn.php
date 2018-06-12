@@ -67,15 +67,15 @@ if ($badLogin)
 
 <form id="mainForm" action="signIn.php" method="POST">
 
-	<label><input class= "uk-input uk-width-1-2" type="email" name="email" placeholder="Email">Email</label>
+	<label>Email<input class= "uk-input uk-width-1-4" type="email" name="email" placeholder="Email"></label>
 	<!-- <label for="email">Email</label> -->
 	<br /><br />
 
-	<label><input class="uk-input uk-width-1-2" type="password" name="password" placeholder="Password">Password</label>
+	<label>Password<input class="uk-input uk-width-1-4" type="password" name="password" placeholder="Password"></label>
 	<!-- <label for="password">Password</label> -->
 	<br /><br />
 
-	<input class="uk-input uk-width-1-4" type="submit" value="Sign In" />
+	<input class="uk-input uk-width-1-6" type="submit" value="Sign In" />
 
 </form>
 
