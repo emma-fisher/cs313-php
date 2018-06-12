@@ -38,7 +38,7 @@
         <div class="uk-navbar-center">
             <a class="uk-navbar-item uk-logo" href="">Friday Nite</a>
         </div>
-        <div class="uk-navbar-right">
+        <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
                     <a class="uk-active" href="#">Menu</a>
@@ -52,10 +52,6 @@
                         </ul>
                     </div>
                 </li>
-            </ul>
-        </div>
-        <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
                 <li>
                     <a class="uk-active" href="#">Categories</a>
                     <div class="uk-navbar-dropdown">
