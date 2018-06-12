@@ -32,6 +32,7 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.js"></script>
         <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+        <link rel="stylesheet" href="website.css" type="text/css">
         <title>
             Friday Nite
         </title>
