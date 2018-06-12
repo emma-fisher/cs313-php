@@ -22,7 +22,7 @@
         $statement2 = $db->prepare($query2);
         $statement2->execute();
         $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
-        echo $users;
+        echo 'users' . $users;
     }
     
 ?>
