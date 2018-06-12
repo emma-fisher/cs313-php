@@ -12,19 +12,17 @@ $courseId = htmlspecialchars($_GET["course_id"]);
     </head>
     <body>
     
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-position-center">
         <h3 class="uk-card-title">Create Post</h3>
 
             <form action="insertPost.php" method="POST">
-                <fieldset class="uk-fieldset">
-
 
                     <div class="uk-margin">
                         <input class="uk-input uk-width-1-2" type="text" name="title" placeholder="Title">
                     </div>
 
                     <div class="uk-margin">
-                        <textarea class="uk-textarea uk-width-1-2" rows="5" name="description" placeholder="Description"></textarea>
+                        <textarea class="uk-textarea" rows="5" name="description" placeholder="Description"></textarea>
                     </div>
 
                     <div class="uk-margin">
@@ -32,7 +30,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                     </div>
 
                     <div class="uk-margin">
-                        <textarea class="uk-textarea uk-width-1-2" rows="5" name="tips" placeholder="Tips"></textarea>
+                        <textarea class="uk-textarea" rows="5" name="tips" placeholder="Tips"></textarea>
                     </div>
 
                     <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -42,9 +40,8 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                         <label><input class="uk-radio" type="radio" name="category" value="group date"> Group Date</label>
                     </div>
 
-                    <input class="uk-button-default uk-width-1-4" type="submit" value="Create">
+                    <input class="uk-input uk-width-1-4" type="submit" value="Create">
 
-                </fieldset>
             </form>
         </div>
     </body>
