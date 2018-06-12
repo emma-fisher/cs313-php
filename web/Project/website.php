@@ -20,7 +20,7 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, id FROM posts OUTER JOIN users ON (posts.user_id=user.email)";
+    $query = "SELECT title, description_text, price, tips, id FROM posts";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
