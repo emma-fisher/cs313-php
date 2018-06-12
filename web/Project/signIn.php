@@ -69,22 +69,24 @@ if ($badLogin)
 
     <form id="mainForm" action="signIn.php" method="POST">
 
-	<input class= "uk-input uk-width-1-4" type="email" name="email" placeholder="Email">
+	<input class= "uk-input" type="email" name="email" placeholder="Email">
 	<br /><br />
 
-	<input class="uk-input uk-width-1-4" type="password" name="password" placeholder="Password">
+	<input class="uk-input" type="password" name="password" placeholder="Password">
 	<br /><br />
 
-	<input class="uk-input uk-width-1-6" type="submit" value="Sign In" />
+	<input class="uk-input uk-width-1-2" type="submit" value="Sign In" />
 
 	</form>
+
+	<br /><br />
+
+	Or <a href="signUp.php">Sign up</a> for a new account.
 </div>
 
 
 
-<br /><br />
 
-Or <a href="signUp.php">Sign up</a> for a new account.
 
 </div>
 
