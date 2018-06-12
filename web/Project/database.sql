@@ -1,9 +1,9 @@
 CREATE TABLE  users 
 (
-    id SERIAL NOT NULL PRIMARY KEY,
+    id SERIAL NOT NULL,
     first_name VARCHAR(40),
     last_name VARCHAR(100),
-    email VARCHAR(70) UNIQUE NOT NULL,
+    email VARCHAR(70) UNIQUE NOT NULL PRIMARY KEY,
     password VARCHAR(255)
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE  posts
     price MONEY,
     tips TEXT,
     rating SMALLINT,
-    user_id INT REFERENCES users(id),
+    user_id VARCHAR REFERENCES users(email),
     category_id INT NOT NULL REFERENCES categories(id)
 );
 
