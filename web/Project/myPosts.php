@@ -31,7 +31,7 @@
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-        $query2 = "SELECT id FROM users WHERE first_name=Emma";
+        $query2 = "SELECT id FROM users WHERE first_name='Emma'";
         $statement2 = $db->prepare($query2);
         $statement2->execute();
         $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
