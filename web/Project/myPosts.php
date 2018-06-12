@@ -5,10 +5,10 @@
 
     if (!isset($db))
     {
-        echo "hello";
         die("DB Connection was not set");
     }
 
+    echo $_POST["email"];
     if (isset($_POST['email']) && isset($_POST['password']))
     {
         $email = $_POST['email'];
