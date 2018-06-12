@@ -19,3 +19,7 @@ body {
 .uk-navbar-container {
     margin-bottom: 30px;
 }
+
+.uk-logo {
+    text-transform: uppercase;
+}
