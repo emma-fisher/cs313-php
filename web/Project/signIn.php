@@ -75,7 +75,7 @@ if ($badLogin)
 	<!-- <label for="password">Password</label> -->
 	<br /><br />
 
-	<input class="uk-inputuk-width-1-4" type="submit" value="Sign In" />
+	<input class="uk-input uk-width-1-4" type="submit" value="Sign In" />
 
 </form>
 
