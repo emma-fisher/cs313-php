@@ -1,20 +1,7 @@
 
 <?php
-/**********************************************************
-* File: signIn.php
-* Author: Br. Burton
-* 
-* Description: This page has a form for the user to sign in.
-*
-* In this case, to show another approach, we will have this
-* page have two purposes, it will have the form for signing
-* in, but it will also have the logic to check a username
-* and password and redirect the user to the home page if
-* everything checks out. Thus it will post to itself.
-***********************************************************/
-// If you have an earlier version of PHP (earlier than 5.5)
-// You need to download and include password.php.
-//require("password.php"); // used for password hashing.
+
+
 session_start();
 $badLogin = false;
 // First check to see if we have post variables, if not, just
@@ -60,6 +47,9 @@ if (isset($_POST['email']) && isset($_POST['password']))
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
 	<title>Sign In</title>
 </head>
 
@@ -77,15 +67,15 @@ if ($badLogin)
 
 <form id="mainForm" action="signIn.php" method="POST">
 
-	<input type="email" name="email" placeholder="Email">
-	<label for="email">Email</label>
+	<label><input class= "uk-input" type="email" name="email" placeholder="Email">Email</label>
+	<!-- <label for="email">Email</label> -->
 	<br /><br />
 
-	<input type="password" name="password" placeholder="Password">
-	<label for="password">Password</label>
+	<label><input class="uk-input" type="password" name="password" placeholder="Password">Password</label>
+	<!-- <label for="password">Password</label> -->
 	<br /><br />
 
-	<input type="submit" value="Sign In" />
+	<input class="uk-input" type="submit" value="Sign In" />
 
 </form>
 
