@@ -40,7 +40,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
                     <label><input class="uk-radio" type="radio" name="category" value="group date"> Group Date</label>
                 </div>
 
-                <input class="uk-button-default uk-width-1-6" type="submit" value="Create">
+                <input class="uk-button-default uk-width-1-4" type="submit" value="Create">
 
             </fieldset>
         </form>

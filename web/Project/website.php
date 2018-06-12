@@ -20,7 +20,7 @@
         die("DB Connection was not set");
     }
 
-    $query = "SELECT title, description_text, price, tips, rating, id FROM posts ORDER BY rating DESC";
+    $query = "SELECT title, description_text, price, tips, id FROM posts";
     $statement = $db->prepare($query);
     //Bind any variables I need to
     $statement->execute();
@@ -75,17 +75,12 @@
 
     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
         <?php 
-            function increaseRating()
-            {
-                $rating = $rating + 1;
-            }
             foreach ($posts as $post)
             {
                 $title = $post["title"];
                 $description = $post["description_text"];
                 $price = $post["price"];
                 $tips = $post["tips"];
-                $rating = $post["rating"];
                 $id = $post["id"];
 
                 
@@ -106,7 +101,6 @@
                             <ul>
                                 <li> $tips </li>
                             </ul>
-                            <h4> $rating <a onclick='increaseRating();' uk-icon='heart'></a> </h4>
                         </div>
                     </div>";
             }
