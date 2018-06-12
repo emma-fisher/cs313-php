@@ -25,17 +25,17 @@
         
         $email = $_SESSION['email'];
 	    $password = $_SESSION['password'];
-        $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts";
+        $query = "SELECT title, description_text, price, tips, rating, id, category_id FROM posts, users WHERE user_id=users.id";
         $statement = $db->prepare($query);
         //Bind any variables I need to
         $statement->execute();
         $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-        $query2 = "SELECT id FROM users WHERE first_name='Emma'";
-        $statement2 = $db->prepare($query2);
-        $statement2->execute();
-        $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
-        echo 'users' . $users;
+        // $query2 = "SELECT id FROM users WHERE first_name='Emma'";
+        // $statement2 = $db->prepare($query2);
+        // $statement2->execute();
+        // $users = $statement2->fetchAll(PDO::FETCH_ASSOC);
+        // echo 'users' . $users;
     }
     
 ?>
