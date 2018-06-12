@@ -13,7 +13,7 @@ $courseId = htmlspecialchars($_GET["course_id"]);
     </head>
     <body>
     
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-position-center">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-position-bottom-center">
         <h3 class="uk-card-title">Create Post</h3>
 
             <form action="insertPost.php" method="POST">
